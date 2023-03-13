@@ -1,0 +1,96 @@
+/********************************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+/********************************************/
+
+:root {
+    --main-color: rgb(91, 25, 214);
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+main {
+    background-color: rgb(217, 215, 215);
+    height: calc(100vh - 70px);
+}
+
+/********************************************/
+
+.title {
+    color: var(--main-color);
+    padding-top: 1.5rem;
+    padding-left: 10px;
+    font-size: 2.5rem;
+}
+
+#nav {
+    width: 100%;
+    height: 70px;
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    max-height: 20px;
+    margin-left: 10px;
+}
+
+#icons_container {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1080px;
+}
+
+.icon_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 10rem;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px rgba(132, 132, 132, 0.673);
+}
+
+.icon_box:hover {
+    background-color: rgba(190, 190, 190, 0.752);
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.icon_box i {
+    font-size: 1.5rem;
+}
+
+
+/********************************************/
+
+
+
+/********************************************/
+
+
+
+/********************************************/
