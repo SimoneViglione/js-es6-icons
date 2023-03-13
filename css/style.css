@@ -55,10 +55,11 @@ select {
 }
 
 #icons_container {
-    margin: 20px;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
+    max-width: 1080px;
 }
 
 .icon_box {
@@ -71,6 +72,12 @@ select {
     border-radius: 10px;
     background-color: white;
     box-shadow: 2px 2px rgba(132, 132, 132, 0.673);
+}
+
+.icon_box:hover {
+    background-color: rgba(190, 190, 190, 0.752);
+    cursor: pointer;
+    scale: 1.1;
 }
 
 .icon_box i {

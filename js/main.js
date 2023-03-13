@@ -129,3 +129,35 @@ icons.forEach(icons => {
     iconBox.append(iconName);
     iconContainer.append(iconBox);
 });
+
+const filter = document.getElementById('filter');
+
+filter.addEventListener('change', function() {
+	const optionType = this.value;
+	const iconsFilter = icons.filter(function(icons) {
+		return optionType === 'all' || icons.type === optionType;
+	});
+
+	filterIcons(iconsFilter);
+});
+
+function filterIcons(icons) {
+	iconContainer.innerHTML = '';
+
+	icons.forEach(icons => {
+		const iconBox = document.createElement('div');
+		iconBox.classList.add('icon_box');
+		
+		const iconIcon = document.createElement('i');
+		iconIcon.classList.add(icons.prefix + `solid`, icons.prefix + icons.name , icons.color);
+		
+		const iconName = document.createElement('span');
+		iconName.innerText = icons.name;
+		
+		iconBox.append(iconIcon);
+		iconBox.append(iconName);
+		iconContainer.append(iconBox);
+	});
+}
+
+filterIcons(icons);
